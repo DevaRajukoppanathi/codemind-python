@@ -1,8 +1,9 @@
 n=int(input())
-for i in range(n,0,-1):
-    for j in range(n,0,-1):
-        if(i==j or j==n-i+1):
-            print(i,end=' ')
-        else:
-            print(' ',end='')
+for i in range(1,n+1):
+    for j in range(i,n):
+        print(' ',end='')
+    s=str((10**i//9)**2)
+    for k in s:
+        print(chr(int(k)+64),end='')
     print('')
+            
